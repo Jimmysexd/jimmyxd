@@ -49,8 +49,8 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/Slam-Team/slam-mirrorbot")
-    buttons.buildbutton("Channel", "https://t.me/SlamMirrorUpdates")
+    buttons.buildbutton("Owner", "https://t.me/lordhimanshu69")
+    buttons.buildbutton("Channel", "https://t.me/lordxdtorrent2gdrive")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
@@ -58,7 +58,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         else :
             sendMarkup(start_string, context.bot, update, reply_markup)
     else :
-        sendMarkup(f"Oops! not a Authorized user.\nPlease deploy your own <b>slam-mirrorbot</b>.", context.bot, update, reply_markup)
+        sendMarkup(f"Oops! not a Authorized user.\nPlease Message owner <b>Xdddddd</b>.", context.bot, update, reply_markup)
 
 
 def restart(update, context):
